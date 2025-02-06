@@ -1,64 +1,140 @@
+<!DOCTYPE html>
 <html>
-	<head><title>HAPPY ROSE DAY</title>
-	<style>
-		.container {
-  width: 100px;
-  height: 300px;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  -moz-transform: scale(0.6);
-  -ms-transform: scale(0.6);
-  -webkit-transform: scale(0.6);
-  transform: scale(0.6);
-}
-.container div {
-  position: absolute;
-}
+<head>
+  <title>HAPPY ROSE DAY</title>
+  <style>
+    .container {
+      width: 100px;
+      height: 300px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      transform: scale(0.6);
+    }
 
-  
-.container .pink-rose > div {
-  background: #e23c64;
-  width: 45px;
-  height: 80px;
-  position: absolute;
-  -moz-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
+    .container div {
+      position: absolute;
+    }
 
-.container .pink-rose > div:nth-child(1) {
-	</style>
-	</head>
+    /* Rose Stem */
+    .rose-stem {
+      width: 10px;
+      height: 200px;
+      background: green;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    /* Rose Leaves */
+    .rose-leave {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .leave-1, .leave-2, .leave-3, .leave-4 {
+      width: 20px;
+      height: 20px;
+      background: green;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .leave-1 {
+      top: 0;
+      left: -30px;
+      transform: rotate(45deg);
+    }
+
+    .leave-2 {
+      top: 0;
+      right: -30px;
+      transform: rotate(-45deg);
+    }
+
+    .leave-3 {
+      top: 20px;
+      left: -20px;
+      transform: rotate(30deg);
+    }
+
+    .leave-4 {
+      top: 20px;
+      right: -20px;
+      transform: rotate(-30deg);
+    }
+
+    /* Pink Rose Petals */
+    .pink-rose {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pink-rose > div {
+      background: #e23c64;
+      width: 45px;
+      height: 80px;
+      position: absolute;
+      border-radius: 50%;
+      transition: all 0.5s ease-out;
+    }
+
+    .pink-rose > div:nth-child(1) {
+      transform: rotate(0deg) translateY(-40px);
+    }
+
+    .pink-rose > div:nth-child(2) {
+      transform: rotate(45deg) translateY(-40px);
+    }
+
+    .pink-rose > div:nth-child(3) {
+      transform: rotate(90deg) translateY(-40px);
+    }
+
+    .pink-rose > div:nth-child(4) {
+      transform: rotate(135deg) translateY(-40px);
+    }
+
+    .pink-rose > div:nth-child(5) {
+      transform: rotate(180deg) translateY(-40px);
+    }
+
+    .pink-rose > div:nth-child(6) {
+      transform: rotate(225deg) translateY(-40px);
+    }
+
+    .pink-rose > div:nth-child(7) {
+      transform: rotate(270deg) translateY(-40px);
+    }
+  </style>
+</head>
 <body>
-<div class="container">
-	
-	<div class="rose-stem">
-		<div></div>
-		<div></div>
-     <div class="rose-leave">
-     <div class="leave-1"></div>
-     <div class="leave-2"></div>
-     <div class="leave-3"></div>
-     <div class="leave-4"></div>
-   </div>
-	</div>
-  
-	<div class="pink-rose">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-	
- </div>
-	
+  <div class="container">
+    <div class="rose-stem">
+      <div class="rose-leave">
+        <div class="leave-1"></div>
+        <div class="leave-2"></div>
+        <div class="leave-3"></div>
+        <div class="leave-4"></div>
+      </div>
+    </div>
+    <div class="pink-rose">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
 </body>
 </html>
